@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>App Calcular Promedio</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <div class="container_app">
+                <div class="container_inputs">
+                    <form id="myForm">
+                        <label class="label_input" for="input_price">Ingrese un precio para calcular</label>
+                        <input class="input" type="number" id="inputPrice" required>
+                        <label class="label_input" for="">Ingresa tu cupon de descuento</label>
+                        <input class="input" type="text" id="inputCoupon" required>
+                    </form>
+                </div>
+                <button class="submit_discount" id="submitForm" onclick="validateCoupon()">
+                    Calcular Descuento
+                </button>
+            </div>
+            <div class="show_results_container">
+                <hr class="line_solid">
+                <p class="coupon_validate" id="coupon_validate"></p>
+                <p class="discount_total" id="discount_total"></p>
+                <p class="results_finalPrice" id="results_finalPrice"></p>
+                <hr class="line_solid">
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
