@@ -1,4 +1,4 @@
-:root{
+:root {
     font-size: 62.5%;
     --blanco: #ffffff;
     --primario: #19192C;
@@ -10,16 +10,18 @@
     --negro: #0b090a;
     --small: 1.5rem;
     --medium: 1.8rem;
-    --large: 2.8rem; 
+    --large: 2.8rem;
 }
 
-.small{
+.small {
     font-size: var(--small);
 }
-.medium{
+
+.medium {
     font-size: var(--medium);
 }
-.large{
+
+.large {
     font-size: var(--large);
 }
 
@@ -28,25 +30,31 @@ html {
     min-height: 100%;
     margin: 0;
 }
-body{
+
+body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Rubik', sans-serif;
     background-color: var(--grisClaro);
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
-.container{
+
+.container {
     padding: 1rem;
     margin: 100px auto 100px auto;
-    width: 500px;
+    width: 600px;
     height: auto;
     text-align: center;
     border-radius: 10px;
     background-color: var(--blanco);
 }
-.container_app{
+
+.container_app {
     background-color: var(--primario);
     color: var(--blanco);
     display: flex;
@@ -56,23 +64,28 @@ body{
     height: 200px;
     padding: 0 100px;
 }
-.container_inputs{
+
+.container_inputs {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
     text-align: center;
     align-items: center;
 }
-.container_inputs input{
+
+.container_inputs input {
     width: 100%;
 }
-.label_input{
-    font-size: 1.1rem;
+
+.label_input {
+    font-size: 1.4rem;
     font-weight: 200;
-    margin-bottom: 3px;
-    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     color: var(--grisClaro);
 }
-.input{
+
+.input {
     background-color: rgba(0, 0, 0, 0);
     color: var(--grisClaro);
     border: 1px solid var(--secundario);
@@ -81,7 +94,8 @@ body{
     font-size: var(--small);
 
 }
-.submit_discount{
+
+.submit_discount {
     margin-top: 10px;
     padding: 5px;
     border-radius: 3px;
@@ -93,34 +107,40 @@ body{
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
-.submit_discount:hover{
+
+.submit_discount:hover {
     background-color: var(--blanco);
     color: var(--oscuro);
 }
-.show_results_container{
+
+.show_results_container {
     background-color: var(--oscuro);
     width: 100%;
     height: auto;
     padding: 10px 0;
 }
-.coupon_validate{
+
+.coupon_validate {
     color: var(--blanco);
     font-size: var(--small);
     padding-top: 5px;
     margin: 0;
 }
-.discount_total{
+
+.discount_total {
     color: var(--grisClaro);
     font-size: var(--small);
     padding-top: 5px;
     margin: 0;
 }
-.results_finalPrice{
+
+.results_finalPrice {
     color: var(--grisClaro);
     font-size: var(--small);
     padding-top: 5px;
     margin: 0;
 }
+
 /* Solid border */
 .line_solid {
     margin-top: 10px;
